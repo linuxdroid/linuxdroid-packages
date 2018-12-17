@@ -2,6 +2,7 @@
 set -e -u
 
 PACKAGES=""
+PACKAGES+=" apt-utils"
 PACKAGES+=" asciidoc"
 PACKAGES+=" asciidoctor" # Used by weechat for man pages.
 PACKAGES+=" automake"
@@ -37,6 +38,10 @@ PACKAGES+=" libexpat1-dev" # Needed by ghostscript
 PACKAGES+=" libjpeg-dev" # Needed by ghostscript
 PACKAGES+=" gawk" # Needed by apr-util
 PACKAGES+=" libssl-dev" # Needed to build Rust
+PACKAGES+=" distcc"
+PACKAGES+=" ccache"
+PACKAGES+=" iproute2"
+PACKAGES+=" net-tools"
 
 sudo DEBIAN_FRONTEND=noninteractive \
 	apt-get install -yq --no-install-recommends $PACKAGES

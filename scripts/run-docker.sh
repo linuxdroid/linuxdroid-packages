@@ -10,7 +10,7 @@ else
 	REPOROOT="$(dirname $(readlink -f $0))/../"
 fi
 
-IMAGE_NAME=mininix/package-builder
+IMAGE_NAME=linuxdroid/mininix-package-builder
 : ${CONTAINER_NAME:=mininix-package-builder}
 
 USER=builder
@@ -21,6 +21,7 @@ docker start $CONTAINER_NAME > /dev/null 2> /dev/null || {
 	echo "Creating new container..."
 	docker run \
 	       --detach \
+	       --network br0 \
 	       --env HOME=$HOME \
 	       --name $CONTAINER_NAME \
 	       --volume $REPOROOT:$HOME/mininix-packages \

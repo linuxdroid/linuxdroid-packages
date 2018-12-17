@@ -1,7 +1,7 @@
 # Build with:
-#   docker build -t mininix/package-builder .
+#   docker build -t linuxdroid/mininix-package-builder .
 # Push to docker hub with:
-#   docker push mininix/package-builder
+#   docker push mininix/mininix-package-builder
 # This is done after changing this file or any of the
 # scripts/setup-{ubuntu,android-sdk}.sh setup scripts.
 FROM ubuntu:18.10
