@@ -6,7 +6,7 @@ MININIX_PKG_DESCRIPTION="Toolkit for manipulation of graphic images of different
 # So use revisions from http://svn.code.sf.net/p/netpbm/code/advanced for packages.
 MININIX_PKG_VERSION=3094
 MININIX_PKG_SHA256=2f4d8c245f174e391a4cf2418075c06532aee8a5fcc8dbbb8f2e7012cd9d52a4
-MININIX_PKG_SRCURL=https://dl.bintray.com/mininix/upstream/netpbm-advanced-r${MININIX_PKG_VERSION}.tar.gz
+MININIX_PKG_SRCURL=https://dl.bintray.com/termux/upstream/netpbm-advanced-r${MININIX_PKG_VERSION}.tar.gz
 MININIX_PKG_DEPENDS="libpng, libxml2, libjpeg-turbo, libtiff"
 MININIX_PKG_BUILD_IN_SRC=yes
 

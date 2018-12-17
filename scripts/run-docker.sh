@@ -21,7 +21,6 @@ docker start $CONTAINER_NAME > /dev/null 2> /dev/null || {
 	echo "Creating new container..."
 	docker run \
 	       --detach \
-	       --network br0 \
 	       --env HOME=$HOME \
 	       --name $CONTAINER_NAME \
 	       --volume $REPOROOT:$HOME/mininix-packages \

@@ -2,7 +2,7 @@
 set -e -u
 
 CONTAINER=mininix-package-builder
-IMAGE=mininix/package-builder
+IMAGE=linuxdroid/mininix-package-builder
 
 docker pull $IMAGE
 

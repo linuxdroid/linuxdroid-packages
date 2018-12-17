@@ -4,7 +4,7 @@ MININIX_PKG_DEPENDS="libcrypt, openssl"
 MININIX_PKG_VERSION=18.9.18
 MININIX_PKG_SHA256=aa14a35b7d071c068545d835db74c77538b115b37316dd1b331bd0dee2af0f24
 # We use our bintray mirror since old version snapshots are not kept on main site.
-MININIX_PKG_SRCURL=https://dl.bintray.com/mininix/upstream/picolisp_${MININIX_PKG_VERSION}.tar.gz
+MININIX_PKG_SRCURL=https://dl.bintray.com/termux/upstream/picolisp_${MININIX_PKG_VERSION}.tar.gz
 MININIX_PKG_BUILD_IN_SRC=true
 # arm and i686: The c code uses gcc-specific "variable length array in structure":
 # x86_64: The assembly is not position-independent:

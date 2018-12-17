@@ -7,7 +7,7 @@ MININIX_PKG_SHA256=7e9f8e8dcbabed0c8eeb976100496567abae7ac9d92c72cebd1a9d965473e
 # We use a mirror to avoid using
 # https://sourceforge.net/code-snapshots/git/n/ne/net-tools/code.git/net-tools-code-$commit.zip
 # which does not work all the time (sourceforge caching system):
-MININIX_PKG_SRCURL=https://dl.bintray.com/mininix/upstream/net-tools-code-${commit}.zip
+MININIX_PKG_SRCURL=https://dl.bintray.com/termux/upstream/net-tools-code-${commit}.zip
 MININIX_PKG_BUILD_IN_SRC=true
 MININIX_PKG_EXTRA_MAKE_ARGS="BINDIR=$MININIX_PREFIX/bin SBINDIR=$MININIX_PREFIX/bin HAVE_HOSTNAME_TOOLS=0"
 

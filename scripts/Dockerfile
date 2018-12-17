@@ -30,7 +30,6 @@ RUN apt-get update && \
     rm -Rf sources/cxx-stl/system && \
     cd /home/builder/lib/android-sdk/tools && \
     rm -Rf emulator* lib* proguard templates && \
-    apt install -yq ccache distcc && \
     /usr/sbin/update-ccache-symlinks && \
     echo 'export PATH="/usr/lib/ccache:$PATH"' | tee -a /home/builder/.bashrc && \
     export CPUS=$(grep -c ^processor /proc/cpuinfo) && export CPUS=$(($CPUS + 1)) && \

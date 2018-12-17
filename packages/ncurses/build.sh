@@ -4,7 +4,7 @@ MININIX_PKG_VERSION=(6.1.20181117
 		    9.22)
 MININIX_PKG_SHA256=(b5568d53d31787cda727f949b68bcb60c667dba5deff72bd7ade40dbe45e4b16
 		   e94628e9bcfa0adb1115d83649f898d6edb4baced44f5d5b769c2eeb8b95addd)
-MININIX_PKG_SRCURL=(https://dl.bintray.com/mininix/upstream/ncurses-${MININIX_PKG_VERSION:0:3}-${MININIX_PKG_VERSION:4}.tgz
+MININIX_PKG_SRCURL=(https://dl.bintray.com/termux/upstream/ncurses-${MININIX_PKG_VERSION:0:3}-${MININIX_PKG_VERSION:4}.tgz
 		   https://fossies.org/linux/misc/rxvt-unicode-${MININIX_PKG_VERSION[1]}.tar.bz2)
 # --without-normal disables static libraries:
 # --disable-stripping to disable -s argument to install which does not work when cross compiling:

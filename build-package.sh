@@ -459,9 +459,9 @@ mininix_step_start_build() {
 	local MININIX_ELF_CLEANER_VERSION
 	MININIX_ELF_CLEANER_VERSION=$(bash -c ". $MININIX_SCRIPTDIR/packages/mininix-elf-cleaner/build.sh; echo \$MININIX_PKG_VERSION")
 	mininix_download \
-		"https://raw.githubusercontent.com/mininix/mininix-elf-cleaner/v$MININIX_ELF_CLEANER_VERSION/mininix-elf-cleaner.cpp" \
+		"https://raw.githubusercontent.com/linuxdroid/mininix-elf-cleaner/v$MININIX_ELF_CLEANER_VERSION/mininix-elf-cleaner.cpp" \
 		"$MININIX_ELF_CLEANER_SRC" \
-		62c3cf9813756a1b262108fbc39684c5cfd3f9a69b376276bb1ac6af138f5fa2
+		SKIP_CHECKSUM
 	if [ "$MININIX_ELF_CLEANER_SRC" -nt "$MININIX_ELF_CLEANER" ]; then
 		g++ -std=c++11 -Wall -Wextra -pedantic -Os "$MININIX_ELF_CLEANER_SRC" -o "$MININIX_ELF_CLEANER"
 	fi
