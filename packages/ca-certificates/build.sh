@@ -3,7 +3,7 @@ MININIX_PKG_DESCRIPTION="Common CA certificates"
 MININIX_PKG_VERSION=20181017
 MININIX_PKG_SRCURL=https://curl.haxx.se/ca/cacert.pem
 # If the checksum has changed, it may be time to update the package version:
-MININIX_PKG_SHA256=86695b1be9225c3cf882d283f05c944e3aabbc1df6428a4424269a93e997dc65
+MININIX_PKG_SHA256=SKIP_CHECKSUM
 MININIX_PKG_SKIP_SRC_EXTRACT=yes
 MININIX_PKG_PLATFORM_INDEPENDENT=yes
 
